@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rich_man/person_characteristics.dart';
 
-class Main_Page extends StatelessWidget {
-  var petro = Person(nickname: "Petya", age: 23, money: 3423423);
+class MainPage extends StatelessWidget {
+  var petro = Person(nickname: "Petya", age: 23, money: 10000);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class Main_Page extends StatelessWidget {
         appBar: AppBar(
           title: const Center(
             child: Text(
-              "I am RICH man!",
+              "I am RICH man by Iryna Boisyn!",
               style: TextStyle(color: Colors.white),
             ),
           ),
@@ -19,12 +19,12 @@ class Main_Page extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Image(
-                  image: AssetImage(
-                'assets/diamond.png',
-              )),
+                image: AssetImage(
+                  'assets/diamond.png',
+                ),
+              ),
               Text(
                 'Name: ${petro.nickname}',
                 style: const TextStyle(fontSize: 20),
@@ -34,7 +34,7 @@ class Main_Page extends StatelessWidget {
                 style: const TextStyle(fontSize: 20),
               ),
               Text(
-                'My wealth : ${petro.money = 88} dollars',
+                'My wealth : ${petro.money = 3434} dollars',
                 style: const TextStyle(fontSize: 20),
               ),
             ],
